@@ -47,7 +47,7 @@ public class JarronEgipcio : MonoBehaviour, IInteractuable
         // Detectar si entramos en una base
         BaseJarron baseDetectada = other.GetComponent<BaseJarron>();
         
-        if (baseDetectada != null && !estaColocado && rb != null && rb.linearVelocity.magnitude < 0.5f)
+        if (baseDetectada != null && !estaColocado && rb != null )
         {
             IntentarColocarEnBase(baseDetectada);
         }
@@ -56,8 +56,10 @@ public class JarronEgipcio : MonoBehaviour, IInteractuable
     void IntentarColocarEnBase(BaseJarron nuevaBase)
     {
         // Verificar si el jeroglífico coincide
+        Debug.Log($"Intentando colocar jarrón {nombreJarron} en base {nuevaBase.name}");
         if (nuevaBase.jeroglifico == this.jeroglifico && !nuevaBase.tieneJarron)
         {
+            Debug.Log($"Colocando jarrón {nombreJarron} en base {nuevaBase.name}");
             ColocarEnBase(nuevaBase);
         }
         else
