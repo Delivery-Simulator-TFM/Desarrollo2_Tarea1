@@ -9,6 +9,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Clay_Pottery
     second: {fileID: 2100000, guid: b2ed0b60cd0454c6bbf21e1a7e29bd5a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Clay_Pottery_Clay_PotteryMat
+    second: {fileID: 2100000, guid: 3ef542ea83eed4a67a3ff8f9428d20c9, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
