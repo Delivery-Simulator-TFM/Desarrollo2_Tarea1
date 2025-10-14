@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4a87276fc8d9d2143866c2052c5ea97e
+guid: 96a0233b2d637ad408c71b8c559b8429
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,13 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Architectural_Glass
-    second: {fileID: 2100000, guid: 921a8eb14934854428c06cd2c2360a64, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: VitriMat
-    second: {fileID: 2100000, guid: 90cac51a7a2c0864f9d604f0f74d519d, type: 2}
+      name: Lion
+    second: {fileID: 2100000, guid: 0c4b871a5e7860a438238aaf17782536, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -43,7 +38,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 100
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1

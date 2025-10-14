@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4a87276fc8d9d2143866c2052c5ea97e
+guid: c0da4390b1f6afe45b46b0e7d9f6a277
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,13 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Architectural_Glass
-    second: {fileID: 2100000, guid: 921a8eb14934854428c06cd2c2360a64, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: VitriMat
-    second: {fileID: 2100000, guid: 90cac51a7a2c0864f9d604f0f74d519d, type: 2}
+      name: CoramFieldsBearStatue01_CoramFieldsBearStatue01_u1_v1
+    second: {fileID: 2100000, guid: 1ebc7cc81e7e0dd4f8efac37537e192e, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -43,7 +38,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 100
+    globalScale: 0.5
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -98,7 +93,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.5
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
