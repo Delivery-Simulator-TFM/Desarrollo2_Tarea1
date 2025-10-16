@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: 35353fcd4d6721f4398549f8efaf4602
+guid: 6da7fd21f1fa44b8b86324150794071b
 ModelImporter:
-  serializedVersion: 22200
+  serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Bullet
-    second: {fileID: 2100000, guid: 6df25f11a2ad815469c1ea5f2611c80a, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -61,6 +56,9 @@ ModelImporter:
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
     optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
@@ -110,10 +108,3 @@ ModelImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 311722
-  packageName: Mid-Poly Gun Weapons
-  packageVersion: 1.0.0
-  assetPath: Assets/RyanNein/MidPolyGunWeapons/Rifle/RifleBullet.fbx
-  uploadId: 734405

@@ -1,29 +1,9 @@
 fileFormatVersion: 2
-guid: 033f83607751bb74ca34aa77a8522e8e
+guid: d505a23bc65314a4784622519c891eb7
 ModelImporter:
-  serializedVersion: 22200
+  serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: cabeza_pinguino
-    second: {fileID: 2100000, guid: 96121763feb19eb4a8732535e42cc30e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: cabeza_pinguino.001
-    second: {fileID: 2100000, guid: ce5e9e26aaf052d4bb3cacfdf2755cb9, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: cuerpo_pinguino
-    second: {fileID: 2100000, guid: ebc79e1db7219e948ae7dab38e1e1eae, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: patas_pinguino
-    second: {fileID: 2100000, guid: 020fc3f3f133fab4e973223b684019e8, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -76,6 +56,9 @@ ModelImporter:
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
     optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8

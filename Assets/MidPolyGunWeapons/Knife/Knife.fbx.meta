@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: ccfe6e7745b54f74e8cf3c6ee06ba3ab
+guid: 0325e803b281e489ab1485d64bbcca31
 ModelImporter:
-  serializedVersion: 22200
+  serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Knife
-    second: {fileID: 2100000, guid: 6ebd0dc60beee5249a4564a3349752bb, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -61,6 +56,9 @@ ModelImporter:
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
     optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
@@ -110,10 +108,3 @@ ModelImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 311722
-  packageName: Mid-Poly Gun Weapons
-  packageVersion: 1.0.0
-  assetPath: Assets/RyanNein/MidPolyGunWeapons/Knife/Knife.fbx
-  uploadId: 734405

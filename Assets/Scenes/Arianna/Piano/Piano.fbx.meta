@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: 7ad257bfc0baa794d9d756fb2dccb8d5
+guid: 2ac6d4fd8cf2940ea84a37cff3d0fcd3
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Piaino
-    second: {fileID: 2100000, guid: 398056ec83fe02c468889b1b54e2b488, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0

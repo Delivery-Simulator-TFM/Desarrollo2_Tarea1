@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: 9c8f8b6aaa94d0746bb284ef7af69412
+guid: 8a6708203a5a648f18838c078eb3a1db
 ModelImporter:
-  serializedVersion: 22200
+  serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Shell
-    second: {fileID: 2100000, guid: 1d9fa89152ba56c49af23422d2c19dc5, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -61,6 +56,9 @@ ModelImporter:
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
     optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
@@ -110,10 +108,3 @@ ModelImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 311722
-  packageName: Mid-Poly Gun Weapons
-  packageVersion: 1.0.0
-  assetPath: Assets/RyanNein/MidPolyGunWeapons/Shotgun/ShotgunShell.fbx
-  uploadId: 734405

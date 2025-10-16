@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: c22d1211ec6dbe14e895404308b26e91
+guid: 1f135f9106a144d7a95ddfa733e9793a
 ModelImporter:
-  serializedVersion: 22200
+  serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Shotgun
-    second: {fileID: 2100000, guid: 2d9c93faeae63d6438e1d438418eb2f0, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -61,6 +56,9 @@ ModelImporter:
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
     optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
@@ -110,10 +108,3 @@ ModelImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 311722
-  packageName: Mid-Poly Gun Weapons
-  packageVersion: 1.0.0
-  assetPath: Assets/RyanNein/MidPolyGunWeapons/Shotgun/Shotgun.fbx
-  uploadId: 734405

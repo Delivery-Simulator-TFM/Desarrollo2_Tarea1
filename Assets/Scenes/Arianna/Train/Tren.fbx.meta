@@ -1,54 +1,9 @@
 fileFormatVersion: 2
-guid: eca4669c404bff04291219550ea5feb3
+guid: 72c3de4ed2d064a09b006c5b5242cb54
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Cloth
-    second: {fileID: 2100000, guid: d3d25f3ed55a3c54a86eb8a2ba29e60d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.001
-    second: {fileID: 2100000, guid: efa3fa71e035dae48bbce79abc164a76, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.005
-    second: {fileID: 2100000, guid: 886de8341d0f40e4087690149ede1bcd, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Metal
-    second: {fileID: 2100000, guid: b63c5df9f7446ee4e819856466cb18ff, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Metal.001
-    second: {fileID: 2100000, guid: 820b009217c7fc7428372f35af47c0c2, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: gold
-    second: {fileID: 2100000, guid: a74d7752b88a4f6449b6e11dd820b7e7, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: uv editing
-    second: {fileID: 2100000, guid: e159d54241496ec4289633b76ffd2269, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: wood
-    second: {fileID: 2100000, guid: d96631d41fbbbf643b8b5499812be4df, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: wood.001
-    second: {fileID: 2100000, guid: fd806cd01b7532143af3a9b0fdd3aa86, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0

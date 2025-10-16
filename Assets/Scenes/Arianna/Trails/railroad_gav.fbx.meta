@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: f11aa116a1f6dda4aa9dfa25c8051b07
+guid: 2238ee0f301f24c3883a2dd563416ea3
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: railroad_gav
-    second: {fileID: 2100000, guid: be65ae75608263a438a98c78fce656e9, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
