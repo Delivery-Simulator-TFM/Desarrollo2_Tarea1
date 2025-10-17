@@ -125,6 +125,7 @@ public class PlayerInteraction : MonoBehaviour
         {
             rbObjetoAgarrado.useGravity = false;
             rbObjetoAgarrado.linearDamping = 10f;
+            rbObjetoAgarrado.freezeRotation = true;
         }
 
         OcultarMensajeInteraccion();

@@ -5,7 +5,7 @@ public class PuzzleManager : MonoBehaviour
     [Header("Configuración")]
     public BaseJarron[] bases; // Las 5 bases
     public GameObject ataud; // El ataúd que se abre
-    public GameObject breaker; // El breaker que aparece
+    public GameObject breakerPrefab; // El prefab del breaker
     public Transform puntoApareceBreaker;
 
     [Header("Animación")]
@@ -18,12 +18,6 @@ public class PuzzleManager : MonoBehaviour
         if (bases == null || bases.Length == 0)
         {
             bases = FindObjectsOfType<BaseJarron>();
-        }
-
-        // Ocultar breaker al inicio
-        if (breaker != null)
-        {
-            breaker.SetActive(false);
         }
     }
 
@@ -50,18 +44,19 @@ public class PuzzleManager : MonoBehaviour
         puzzleCompletado = true;
         Debug.Log("¡PUZZLE COMPLETADO! Abriendo ataúd...");
 
+
         // Abrir ataúd
         if (ataud != null)
         {
             StartCoroutine(AbrirAtaud());
         }
 
-        // Mostrar breaker
-        if (breaker != null)
+        // Instanciar breaker
+        if (breakerPrefab != null && puntoApareceBreaker != null)
         {
-            breaker.SetActive(true);
-            
-            // Agregar componente agarrable al breaker
+            GameObject breaker = Instantiate(breakerPrefab, puntoApareceBreaker.position, puntoApareceBreaker.rotation);
+
+            // Agregar componente agarrable al breaker si no lo tiene
             ObjetoAgarrable agarrable = breaker.GetComponent<ObjetoAgarrable>();
             if (agarrable == null)
             {
@@ -73,8 +68,11 @@ public class PuzzleManager : MonoBehaviour
 
     System.Collections.IEnumerator AbrirAtaud()
     {
+        Debug.Log("Abriendo ataúd...");
+        // Aquí puedes agregar la lógica para abrir el ataúd
         Vector3 posicionInicial = ataud.transform.position;
-        Vector3 posicionFinal = posicionInicial + Vector3.up * 2f; // Sube 2 metros
+        Vector3 posicionFinal = posicionInicial + Vector3.right * 1.5f; // Sube 1.5 metros
+        //
 
         float tiempo = 0;
         while (tiempo < 1f)
