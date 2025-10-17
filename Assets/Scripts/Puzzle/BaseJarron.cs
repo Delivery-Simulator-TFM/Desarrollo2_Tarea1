@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class BaseJarron : MonoBehaviour
@@ -12,6 +13,8 @@ public class BaseJarron : MonoBehaviour
 
     [Header("Visual (Opcional)")]
     public GameObject simboloJeroglifico;
+
+    public Action onJarronColocado;
 
     void Start()
     {

@@ -5,9 +5,12 @@ public class ObjetoAgarrable : MonoBehaviour, IInteractuable
     [Header("Configuración")]
     public string nombreObjeto = "Objeto";
     public bool sePuedeAgarrar = true;
-    
+    public Transform puntoAgarre;
+
     [Header("Física")]
     public float masa = 1f;
+    public bool usarGravedad = true;
+
 
     private Rigidbody rb;
 
@@ -19,9 +22,9 @@ public class ObjetoAgarrable : MonoBehaviour, IInteractuable
         {
             rb = gameObject.AddComponent<Rigidbody>();
         }
-        
+
         rb.mass = masa;
-        rb.useGravity = true;
+        rb.useGravity = usarGravedad;
         rb.interpolation = RigidbodyInterpolation.Interpolate;
     }
 
