@@ -1,5 +1,6 @@
 using UnityEngine;
-using TMPro; // Si usas TextMeshPro
+using TMPro;
+using Unity.VisualScripting; // Si usas TextMeshPro
 
 public class LinternaController : MonoBehaviour
 {
