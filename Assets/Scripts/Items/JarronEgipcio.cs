@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class JarronEgipcio : MonoBehaviour, IInteractuable
@@ -12,6 +13,8 @@ public class JarronEgipcio : MonoBehaviour, IInteractuable
 
     private Rigidbody rb;
     private ObjetoAgarrable agarrable;
+    public Action onJarronColocado;
+
 
     public enum TipoJeroglifico
     {
@@ -78,7 +81,7 @@ public class JarronEgipcio : MonoBehaviour, IInteractuable
         // Posicionar correctamente
         transform.position = nuevaBase.puntoColocacion.position;
         transform.rotation = nuevaBase.puntoColocacion.rotation;
-
+        onJarronColocado.Invoke();
         // Desactivar física
         if (rb != null)
         {

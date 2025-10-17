@@ -12,6 +12,20 @@ public class PuzzleManager : MonoBehaviour
     public float velocidadApertura = 1f;
     private bool puzzleCompletado = false;
 
+    [Header("Audio")]
+    public AudioClip sonidoPuzzleCompletado;
+    public AudioClip sonidoJarronColocado;
+    public AudioClip ataudAbierto;
+    private AudioSource audioSource;
+    
+    void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+    }
     void Start()
     {
         // Encontrar todas las bases si no están asignadas
@@ -19,6 +33,22 @@ public class PuzzleManager : MonoBehaviour
         {
             bases = FindObjectsOfType<BaseJarron>();
         }
+
+        // Suscribirse al evento de cada jarrón
+        JarronEgipcio[] jarrones = FindObjectsOfType<JarronEgipcio>();
+        foreach (JarronEgipcio jarron in jarrones)
+        {
+            jarron.onJarronColocado += OnJarronColocado;
+        }
+    }
+
+    void OnJarronColocado()
+    {
+        if (sonidoJarronColocado != null)
+        {
+            audioSource.PlayOneShot(sonidoJarronColocado);
+        }
+        VerificarPuzzleCompletado();
     }
 
     public void VerificarPuzzleCompletado()
@@ -64,6 +94,7 @@ public class PuzzleManager : MonoBehaviour
                 agarrable.nombreObjeto = "Breaker";
             }
         }
+        audioSource.PlayOneShot(sonidoPuzzleCompletado);
     }
 
     System.Collections.IEnumerator AbrirAtaud()
@@ -72,7 +103,7 @@ public class PuzzleManager : MonoBehaviour
         // Aquí puedes agregar la lógica para abrir el ataúd
         Vector3 posicionInicial = ataud.transform.position;
         Vector3 posicionFinal = posicionInicial + Vector3.right * 1.5f; // Sube 1.5 metros
-        //
+        audioSource.PlayOneShot(ataudAbierto);
 
         float tiempo = 0;
         while (tiempo < 1f)
@@ -81,5 +112,9 @@ public class PuzzleManager : MonoBehaviour
             ataud.transform.position = Vector3.Lerp(posicionInicial, posicionFinal, tiempo);
             yield return null;
         }
+
+        // Detener el sonido después de 1 segundo
+        yield return new WaitForSeconds(1f);
+        audioSource.Stop();
     }
 }
