@@ -5385,7 +5385,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1700506932965823279}
   m_Layer: 0
-  m_Name: Habitacion_Alex
+  m_Name: Habitacion_Flora
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

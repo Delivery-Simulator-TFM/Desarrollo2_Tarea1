@@ -183,7 +183,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4659821839254545166}
   m_Layer: 0
-  m_Name: Habitacion_Arianna
+  m_Name: Habitacion_Vaqueros
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
