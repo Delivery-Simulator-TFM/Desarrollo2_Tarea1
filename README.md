@@ -1,10 +1,8 @@
-# Desarrollo2 - Tarea 1: Puzzle del Museo Egipcio
+# Desarrollo2 - Tarea 1: Diseño de un escenario de escape room en Unity con URP
 
-Un juego de rompecabezas/escape room en primera persona desarrollado en Unity donde los jugadores exploran un museo egipcio y resuelven puzzles basados en jeroglíficos.
+## 🎮 Descripción
 
-## 🎮 Descripción del Juego
-
-Los jugadores navegan a través de una sala de museo egipcio, buscando y recolectando jarrones antiguos con jeroglíficos. El objetivo es colocar cada jarrón en su pedestal correcto para desbloquear un ataúd y recuperar un interruptor (breaker).
+Se ha creado un modelado de un escape room de un museo, utilizando URP para configurar la iluminación en toda la habitación. La escena principal para poder ver el trabajo se llama: Museum
 
 ## ✨ Características
 
@@ -14,15 +12,6 @@ Los jugadores navegan a través de una sala de museo egipcio, buscando y recolec
 - **Sistema de Linterna**: Activar linterna con tecla X, incluye efectos de parpadeo
 - **Mecánicas de Puzzle**: Empareja jeroglíficos para desbloquear el puzzle
 - **Objetos Basados en Física**: Manejo realista de objetos con Unity Physics
-
-## 🎯 Jugabilidad
-
-1. **Explorar**: Muévete por el museo usando WASD
-2. **Iluminar**: Usa tu linterna (X) para ver en áreas oscuras
-3. **Recolectar**: Encuentra y recoge (E) jarrones egipcios dispersos por el área
-4. **Resolver**: Coloca cada jarrón en el pedestal con el jeroglífico correspondiente
-5. **Completar**: Una vez que los 5 jarrones estén correctamente colocados, el ataúd se abre
-6. **Recuperar**: Recoge el breaker del interior del ataúd
 
 ## 🗝️ Controles
 
@@ -36,16 +25,6 @@ Los jugadores navegan a través de una sala de museo egipcio, buscando y recolec
 | **X** | Activar/desactivar linterna |
 | **ESC** | Desbloquear cursor |
 
-## 📁 Estructura del Proyecto
-
-```
-Assets/Scripts/
-├── Player/           # Movimiento e interacción del jugador
-├── Puzzle/           # Lógica y mecánicas del puzzle
-├── Items/            # Objetos interactivos del juego
-├── Interfaces/       # Definiciones de interfaces
-└── UI/               # Controladores de interfaz de usuario
-```
 
 Para información detallada sobre la arquitectura, ver [Arquitectura de Scripts](Assets/Scripts/Arquitecture.md).
 
@@ -56,27 +35,6 @@ Para información detallada sobre la arquitectura, ver [Arquitectura de Scripts]
 - **UI**: TextMeshPro
 - **Input**: Unity Input System (legacy)
 - **Lenguaje**: C#
-
-## 🏺 Tipos de Jeroglíficos
-
-El juego presenta 5 jeroglíficos egipcios:
-
-1. **Ankh** (☥) - Símbolo de vida
-2. **Ojo de Horus** (𓂀) - Protección
-3. **Escarabajo** (𓆣) - Transformación
-4. **Pirámide** (𓉾) - Eternidad
-5. **Halcón** (𓅃) - Cielo y divinidad
-
-## 🏗️ Arquitectura
-
-El proyecto sigue una arquitectura modular basada en componentes:
-
-- **Sistema de Jugador**: Maneja el controlador del personaje y la interacción
-- **Sistema de Puzzle**: Gestiona la lógica del juego y condiciones de victoria
-- **Sistema de Ítems**: Define objetos agarrables y jarrones
-- **Capa de Interfaces**: Proporciona contratos para objetos interactuables
-
-Consulta el [diagrama de arquitectura](Assets/Scripts/Arquitecture.md) completo para información detallada.
 
 ## 🚀 Comenzando
 
@@ -93,18 +51,6 @@ Consulta el [diagrama de arquitectura](Assets/Scripts/Arquitecture.md) completo 
 3. Abre la escena principal en `Assets/Scenes/`
 4. Presiona Play para probar
 
-## 📝 Desarrollo
-
-### Rama Actual
-- `feat-egypt-room` - Rama principal de desarrollo para el puzzle de la sala egipcia
-
-### Actualizaciones Recientes
-- ✅ Scripts organizados en estructura de carpetas lógica
-- ✅ Mecánicas de colocación de jarrones implementadas
-- ✅ Sistema de completado de puzzle añadido
-- ✅ Sistema de interacción del jugador creado
-- ✅ Controlador de linterna añadido
-
 ## 🤝 Contribuciones
 
 Este es un proyecto estudiantil para el curso de Desarrollo 2.
@@ -117,6 +63,3 @@ Proyecto educativo - Todos los derechos reservados.
 
 Proyecto estudiantil para el curso de desarrollo de juegos.
 
----
-
-**Nota**: Para documentación técnica sobre la arquitectura del código, relaciones entre clases y patrones de diseño, por favor consulta [Arquitecture.md](Assets/Scripts/Arquitecture.md).
