@@ -10,7 +10,6 @@ Se ha creado un modelado de un escape room de un museo, utilizando URP para conf
 - **Cámara con Vista de Mouse**: Control de cámara suave con sensibilidad ajustable
 - **Sistema de Interacción**: Recoger y manipular objetos usando la tecla E
 - **Sistema de Linterna**: Activar linterna con tecla X, incluye efectos de parpadeo
-- **Mecánicas de Puzzle**: Empareja jeroglíficos para desbloquear el puzzle
 - **Objetos Basados en Física**: Manejo realista de objetos con Unity Physics
 
 ## 🗝️ Controles
