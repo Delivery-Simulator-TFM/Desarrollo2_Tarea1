@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     public Transform camaraTransform;
     public float anguloMaximo = 90f;
 
+    public GameObject litern;
+
     private CharacterController controller;
     private Vector3 velocidadVertical;
     private float rotacionX = 0f;
@@ -25,6 +27,7 @@ public class PlayerController : MonoBehaviour
         controller.height = 2f;
         controller.radius = 0.25f;
         controller.center = new Vector3(0, 0, 0);
+        litern.SetActive(true);
 
         // Bloquear y ocultar el cursor
         Cursor.lockState = CursorLockMode.Locked;
